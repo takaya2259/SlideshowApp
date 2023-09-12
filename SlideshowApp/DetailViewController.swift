@@ -9,12 +9,17 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    
+    var photoname:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        image.image = UIImage(named: photoname)
     }
     
+
 
     /*
     // MARK: - Navigation
